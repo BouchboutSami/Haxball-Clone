@@ -1,0 +1,270 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  background-color: rgb(96, 201, 96);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  height: 5%;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 100%;
+  border-top: 2px solid white;
+}
+
+.list-item {
+  width: 70px;
+  margin-right: 15px;
+  list-style-type: none;
+  text-align: center;
+}
+
+.list-item:nth-child(5) {
+  width: 90px;
+}
+
+.list-item:nth-child(1) {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  background-color: slateblue;
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+/*--------------------------------------------------------------------- Nav bar finished --------------------------------------------------------*/
+
+.game {
+  height: 65%;
+  width: 100%;
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tableau {
+  color: white;
+  width: 30%;
+  background-color: rgb(8, 13, 61);
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.time {
+  margin-right: 10px;
+}
+
+.score {
+  margin-left: 10px;
+}
+
+.stadium {
+  position: relative;
+  height: 85%;
+  width: 60%;
+  background-color: rgb(49, 71, 5);
+  margin-top: 10px;
+  border-radius: 100px;
+}
+
+#stade {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  padding-left: 53.19px;
+  padding-right: 53.19px;
+  border-radius: 50px;
+  border: 3px solid white;
+  box-sizing: border-box;
+  position: relative;
+  justify-content: center;
+  background-color: #699057;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.colonne {
+  width: auto;
+  height: 100%;
+}
+.colonne:nth-child(even) {
+  background-color: #699057;
+}
+.colonne:nth-child(odd) {
+  background-color: #789b69;
+}
+#ballon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  background-color: white;
+  border: 1.5px solid black;
+}
+.rond {
+  z-index: 0;
+  position: absolute;
+  background-color: #ffcccc;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: 1px solid black;
+}
+.rondh {
+  top: -5px;
+}
+.rondb {
+  bottom: -5px;
+}
+.rondd {
+  right: 25px;
+  background-color: #ccccff;
+}
+.rondg {
+  left: 25px;
+}
+.cage,
+.cote-droit,
+.cote-gauche {
+  border-radius: 20px;
+  position: absolute;
+  height: 125px;
+  width: 300px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cage {
+  z-index: -2;
+  border: 3px solid black;
+}
+
+.cote-gauche,
+.cage-gauche {
+  left: -30px;
+}
+.cote-droit,
+.cage-droite {
+  right: -30px;
+}
+#centre {
+  z-index: 3;
+  border: 3px solid white;
+  position: absolute;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 125px;
+  height: 125px;
+}
+#ligne {
+  position: absolute;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid white;
+  border-width: 1px 1.5px;
+  height: 100%;
+}
+
+/* ----------------------------------------------------------- game done -----------------------------------------------------*/
+
+.undergame {
+  height: 30%;
+  width: 100%;
+  background-color: rgb(19, 21, 34);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.ping {
+  width: 10%;
+  height: 100%;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.chat {
+  color: green;
+  margin: 10px 0;
+  width: 100%;
+  padding-left: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.write {
+  height: 30px;
+  margin-bottom: 30px;
+  width: 90%;
+  padding-left: 10px;
+  background-color: black;
+  color: white;
+  text-align: start;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+}
+
+.chat-btn {
+  height: 30px;
+  width: 10%;
+  margin-bottom: 30px;
+  border: none;
+  outline: none;
+  background-color: rgb(2, 61, 172);
+  padding: auto 20px;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 12%;
+}
+.send-message {
+  width: 100%;
+  display: flex;
+}
