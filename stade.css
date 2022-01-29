@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+}
+#game-container {
+    overflow: hidden;
+    background-color: #718c5a;
+    position: relative;
+    box-sizing: border-box;
+    border:1px solid black;
+    padding-top: 12.5%;
+    padding-bottom: 12.5%;
+    width: 100vw;
+    height: 100vh;
+}
+.stade {
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%; /* 1206 518*/
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 23vw;
+}
+.terrain {
+    z-index: 0;
+    border-radius: 5vw;
+    box-sizing: border-box;
+    border: 0.2vw solid white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 92%;
+    height: 100%;
+    background: linear-gradient(-45deg, #6d945c 12.5%, #7da372 12.5%, #7da372 37.5%, #6d945c 37.5%, #6d945c 62.5%, #7da372 62.5%, #7da372 87.5%, #6d945c 87.5%);
+    background-size: 10vw 10vw;
+}
+.rond-centre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0.2vw solid white;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 100%;
+}
+.ligne-centre {
+    position: absolute;
+    left: 50%;
+    background-color: white;
+    width: 0.15vw;
+    height: 100%;
+}
+.cage {
+    z-index: 1;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3vw;
+    height: 46%;
+    border-top: 0.2vw solid black;
+    border-bottom: 0.2vw solid black;
+}
+.cage-gauche {
+    left: 0;
+    border-top-left-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    border-left: 0.2vw solid black;
+}
+.cage-droite {
+    right: 0;
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    border-right: 0.2vw solid black;
+}
+.rond {
+    border-radius: 100%;
+    border: 1px solid black;
+    position: absolute;
+    width: 1vw;
+    height: 1vw;
+}
+.rondhaut {
+    transform: translateY(-50%);
+}
+.rondbas {
+    bottom: 0;
+    transform: translateY(50%);
+}
+.ronddroite {
+    right: 2vw;
+    background-color: #CCCCFF;
+
+}
+.rondgauche {
+    background-color: #FFCCCC;
+    left: 2vw;
+}
